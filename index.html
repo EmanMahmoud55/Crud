@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="w-75 py-4 mx-auto">
+    
+        <label for="product-name">Product Name</label>
+        <input type="text " id="product-name" class="form-control my-3">
+        
+        <label for="product-price">Product price</label>
+        <input type="text" id="product-price" class="form-control my-3">
+
+        <label for="product-category">Product category</label>
+        <input type="text" id="product-category" class="form-control my-3">
+
+        <label for="product-des">Product descreption</label>
+        <textarea type="text" id="product-des" class="form-control my-3"></textarea>
+        
+        <button  id="mainBtn" class="btn btn-info w-25 mt-5" onClick="addProduct();">Add product</button>
+        
+
+        <div class="w-75 mx-auto my-5">
+            <label for="search"> search</label>
+            <input type="text" id="search" class="form-control"  onkeyup="searchProduct(this.value);">
+        </div>
+        <table class="table mt-3">
+
+            <thead>
+                <th>index</th>
+                <th>Product Name</th>
+                <th>Product price</th>
+                <th>Product category</th>
+                <th>Product descreption</th>
+                <th>Update</th>
+                <th>Delete</th>
+                
+            </thead>
+
+            <tbody id="product-row">
+
+                
+            </tbody>
+        </table>
+        
+        </div>
+        
+        
+        
+        
+         <script src="js/bootstrap.bundle.min.js"></script>  
+         <script src="js/main.js"></script> 
+
+</body>
+</html>
